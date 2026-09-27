@@ -116,11 +116,6 @@ export default function ProfileScreen() {
           </View>
         </Card>
 
-        <Text style={s.sectionTitle}>NOTIFICATIONS</Text>
-        <Card style={{ marginHorizontal: spacing.lg }}>
-          <Row icon="bell" label="Notification settings" testID="notification-settings" onPress={() => router.push("/notifications")} />
-        </Card>
-
         <Text style={s.sectionTitle}>DATA</Text>
         <Card style={{ marginHorizontal: spacing.lg }}>
           <Row icon="sparkles" label="Load example data" testID="load-demo" onPress={() => { seedDemo(); toast("Example data loaded — explore the graph!"); }} />

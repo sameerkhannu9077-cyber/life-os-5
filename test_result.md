@@ -177,5 +177,20 @@
 ##     -message: "Comprehensive end-to-end testing completed successfully. All requirements verified: cold launch behavior, branding (Life OS, no Emergent), English-only content, all navigation tabs working, Command flow with draft parsing and Planner integration, all 10 workspaces accessible, Profile with notification settings/legal pages (all English-only and offline-focused), keyboard/safe-area behavior, back navigation, and zero console errors. The app is production-ready for offline Android deployment. No issues found."
 ##     -agent: "main"
 ##     -message: "Final validation passed: ESLint, TypeScript, Expo config, Expo Doctor (20/20), web export, and preview health check. Expo dependencies were aligned to the SDK patch versions. No source or configuration errors remain in the offline Android app."
+## frontend:
+##   - task: "Remove expo-notifications completely"
+##     implemented: true
+##     working: true
+##     file: "/app/frontend/app/_layout.tsx"
+##     stuck_count: 0
+##     priority: "high"
+##     needs_retesting: false
+##     status_history:
+##         -working: true
+##         -agent: "main"
+##         -comment: "Removed expo-notifications end-to-end: deleted src/lib/notifications.ts and app/notifications.tsx screen; removed notification observer + cold-start routing from app/_layout.tsx; removed NOTIFICATIONS section from Profile; removed Notifications section from Privacy Policy and notification mention from Terms; removed notificationsEnabled from Settings type and store default; removed expo-notifications plugin + POST_NOTIFICATIONS permission from app.json; removed dependency from package.json and pruned node_modules. tsc --noEmit passes (0 errors), no new lint issues, Expo restarted, Home and Profile render correctly with no notification UI remaining."
+## metadata:
+##   test_sequence: 5
+##   run_ui: false
 
 #====================================================================================================

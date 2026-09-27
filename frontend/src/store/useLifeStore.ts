@@ -113,7 +113,6 @@ const defaultSettings: Settings = {
   pin: null,
   waterGoal: 8,
   waterToday: { date: ymd(), count: 0 },
-  notificationsEnabled: false,
 };
 
 export const useLifeStore = create<State>()(

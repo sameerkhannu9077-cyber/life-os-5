@@ -121,7 +121,6 @@ export interface Settings {
   pin: string | null;
   waterGoal: number;
   waterToday: { date: string; count: number };
-  notificationsEnabled: boolean;
 }
 
 export interface DraftAction {

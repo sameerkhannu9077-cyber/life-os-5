@@ -12,10 +12,7 @@
         "foregroundImage": "./assets/images/app-logo.png",
         "backgroundColor": "#FF5E00"
       },
-      "package": "com.jarvisai.lifeos",
-      "permissions": [
-        "android.permission.POST_NOTIFICATIONS"
-      ]
+      "package": "com.jarvisai.lifeos"
     },
     "web": {
       "bundler": "metro",
@@ -24,13 +21,6 @@
     },
     "plugins": [
       "expo-router",
-      [
-        "expo-notifications",
-        {
-          "color": "#FF5E00",
-          "defaultChannel": "life-os-reminders"
-        }
-      ],
       "expo-font",
       "expo-image",
       "expo-secure-store",

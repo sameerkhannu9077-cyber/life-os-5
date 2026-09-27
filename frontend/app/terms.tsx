@@ -18,7 +18,7 @@ export default function TermsScreen() {
         <TermsSection title="Acceptance" body="By using Life OS, you agree to these terms. If you do not agree, do not use the app." />
         <TermsSection title="Personal organization only" body="Life OS provides tools for organizing personal information, planning, budgeting, habits, study, fitness, and travel. It is not financial, medical, legal, or professional advice." />
         <TermsSection title="Your content and responsibility" body="You control the information you enter and are responsible for keeping backups of anything important. Review entries before relying on them, especially financial amounts and dates." />
-        <TermsSection title="Offline operation" body="Life OS is designed to work without an account, backend, database, or cloud sync. Local notifications depend on Android permission and device settings, including battery optimization and notification channels." />
+        <TermsSection title="Offline operation" body="Life OS is designed to work without an account, backend, database, or cloud sync. All features operate locally on your device, subject to your device settings." />
         <TermsSection title="Availability" body="We aim to keep Life OS reliable, but no software can guarantee uninterrupted operation on every device. Keep your Android system and the app build up to date." />
         <TermsSection title="Contact" body="Questions or support requests can be sent to jarvisai9077@gmail.com." />
         <Pressable onPress={() => Linking.openURL(`mailto:${SUPPORT_EMAIL}`)} style={{ flexDirection: "row", alignItems: "center", justifyContent: "center", gap: 8, paddingVertical: spacing.md }}>
